@@ -1,7 +1,7 @@
 
 body{
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial, sans-serif;
-    /* ...etc... */
+    
 }
 body{
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial, sans-serif;
@@ -26,19 +26,19 @@ header{
     padding: 20px;
     text-align: center;
 }
-/* formatação que traz mais destaque ao header */
+
 
 nav ul{
     list-style: none;
     padding: 0;
 }
-/* remove os pontinhos da lista ul */
+
 
 nav li{
     display: inline;
     margin: 0px;
 }
-/* fazer os Itens ficarem Lado a Lado */
+
 
 nav a{
     text-decoration: none;
@@ -46,15 +46,15 @@ nav a{
     font-weight: bold;
 }
 
-/* --- INÍCIO DO NOVO CÓDIGO DE DESTAQUES --- */
+
 
 section.destaques {
-    display: flex; /* 1. Ativa o Flexbox */
-    flex-wrap: wrap; /* 2. Permite quebrar linha em telemóveis */
-    justify-content: space-between; /* 3. "Espalha" os 3 cartões */
+    display: flex; /
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
-/* 4. Esta é a magia: força o H2 a ocupar 100% da largura */
+
 section.destaques h2 {
     width: 100%;
     text-align: center;
@@ -115,40 +115,40 @@ main img{
 h3.contato{
     text-align: center;
 }
-/* --- Estilos da Página de Contato --- */
+
 
 .form-grupo {
-    margin-bottom: 20px; /* Adiciona espaço entre os campos do formulário */
+    margin-bottom: 20px; 
 }
 
 .form-grupo label {
-    display: block; /* Faz o rótulo (Nome, E-mail) ficar numa linha própria */
+    display: block; 
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 .form-grupo input,
 .form-grupo textarea {
-    width: 100%; /* Faz os campos ocuparem toda a largura disponível */
+    width: 100%; 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Isso garante que o 'padding' não quebre o layout */
+    box-sizing: border-box; 
 }
 
 .form-grupo button {
-    background-color: #333; /* Cor de fundo (a mesma do header) */
-    color: #ffffff; /* Cor do texto */
+    background-color: #333; 
+    color: #ffffff; 
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    cursor: pointer; /* Muda o cursor para uma "mãozinha" */
+    cursor: pointer; 
     font-size: 16px;
     font-weight: bold;
 }
 
 .form-grupo button:hover {
-    background-color: rgb(3, 201, 33); /* Cor verde dos links ao passar o mouse */
+    background-color: rgb(3, 201, 33); 
 }
 
 
@@ -168,8 +168,9 @@ h3.contato{
         text-align: center; 
     }
 }
-/* --- 3. Efeito de Interatividade (Hover) --- */
+
 .destaque-item:hover {
     transform: translateY(-5px); 
     box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
 }
+
