@@ -2,6 +2,8 @@ body {
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header, main, footer {
@@ -10,26 +12,23 @@ header, main, footer {
     margin: 20px auto;
 }
 
-main {
-    background-color: #ffffff;
-    padding: 20px;
-}
-
 header {
     background-color: #333;
     color: #ffffff;
     padding: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 15px 0 0 0;
 }
 
 nav li {
-    display: inline;
-    margin: 0px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 nav a {
@@ -38,24 +37,32 @@ nav a {
     font-weight: bold;
 }
 
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 section.destaques {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
 }
 
 section.destaques h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .destaque-item {
-    width: 32%;
-    margin: 0 0 20px 0;
+    width: 30%;
+    min-width: 250px;
     background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
+    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
@@ -65,27 +72,16 @@ section.destaques h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.destaque-item a {
-    text-decoration: none;
-    color: #333;
+.destaque-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .destaque-item p {
     padding: 15px;
-    text-align: center;
     font-weight: bold;
     margin: 0;
-}
-
-main img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.destaque-item img {
-    height: 200px;
-    object-fit: cover;
 }
 
 .links a {
@@ -124,6 +120,7 @@ h3.contato {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
 }
 
 .form-grupo button:hover {
@@ -131,17 +128,22 @@ h3.contato {
 }
 
 @media (max-width: 768px) {
-
-    .destaque-item {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
+    header {
+        border-radius: 0;
     }
 
     nav li {
         display: block;
-        margin-bottom: 10px;
-        text-align: center;
+        margin: 10px 0;
+    }
+
+    .destaque-item {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main, header, footer {
+        width: 95%;
+        margin: 10px auto;
     }
 }
